@@ -10,6 +10,7 @@ import auth from '../../config/auth';
 
 class SessionController {
     async store(req, res) {
+        console.log('Session');
         // criar o esquema esperado pelo body
         const schema = Yup.object().shape({
             email: Yup.string().email(),
