@@ -14,4 +14,4 @@ routes.use(authMiddleware);
 
 routes.put('/users', userController.update);
 
-module.exports = routes;
+export default routes;
