@@ -1,10 +1,11 @@
-import { Router } from 'express';
-import sessionController from './app/controllers/SessionController';
-import userController from './app/controllers/UserController';
+const { Router } = require('express');
+const userController = require('./app/controllers/UserController');
+const sessionController = require('./app/controllers/SessionController');
 
-import authMiddleware from './app/middleware/auth';
-
+const authMiddleware = require('./app/middleware/auth');
 const routes = new Router();
+
+
 
 routes.post('/users', userController.store);
 routes.post('/sessions', sessionController.store);
@@ -14,4 +15,4 @@ routes.use(authMiddleware);
 
 routes.put('/users', userController.update);
 
-export default routes;
+ module.exports =  routes;

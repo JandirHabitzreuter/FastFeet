@@ -1,23 +1,38 @@
 {
-  "name": "FastFeet",
+  "name": "GoStack-GoBarber",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "repository": "https://github.com/JandirHabitzreuter/FastFeet.git",
-  "license": "MIT",
   "scripts": {
-    "dev": "nodemon --exec sucrase-node src/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec sucrase-node src/server.js",
+    "dev:debug": "nodemon --inspect src/server.js",
+    "build": "sucrase src -d ./build --transforms typescript,imports"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JandirHabitzreuter/GoStack-GoBarber.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JandirHabitzreuter/GoStack-GoBarber/issues"
+  },
+  "homepage": "https://github.com/JandirHabitzreuter/GoStack-GoBarber#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "pg": "^7.18.1",
     "pg-hstore": "^2.3.3",
-    "sequelize": "^5.21.4",
+    "sequelize": "^5.21.5",
     "sucrase": "^3.12.1",
     "yup": "^0.28.1"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.10.0",
