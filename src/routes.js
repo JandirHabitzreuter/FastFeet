@@ -1,11 +1,10 @@
-const { Router } = require('express');
-const userController = require('./app/controllers/UserController');
-const sessionController = require('./app/controllers/SessionController');
+import { Router } from 'express';
+import userController from './app/controllers/UserController';
+import sessionController from './app/controllers/SessionController';
 
-const authMiddleware = require('./app/middleware/auth');
+import authMiddleware from './app/middleware/auth';
+
 const routes = new Router();
-
-
 
 routes.post('/users', userController.store);
 routes.post('/sessions', sessionController.store);
@@ -15,4 +14,4 @@ routes.use(authMiddleware);
 
 routes.put('/users', userController.update);
 
- module.exports =  routes;
+module.exports = routes;
