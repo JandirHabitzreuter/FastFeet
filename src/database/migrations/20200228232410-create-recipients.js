@@ -28,12 +28,17 @@ module.exports = {
                 allowNull: false,
             },
 
+            estado: {
+                type: Sequelize.STRING,
+                allowNull: false,
+            },
+
             cidade: {
                 type: Sequelize.STRING,
                 allowNull: false,
             },
 
-            CEP: {
+            cep: {
                 type: Sequelize.STRING,
                 allowNull: false,
             },

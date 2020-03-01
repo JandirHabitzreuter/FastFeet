@@ -1,4 +1,5 @@
 module.exports = {
- secret : 'c4923cce27fb2889f87a0955807dada5',
- expiresIn:'7d',
-}
+    // tem que ser um MD5 unico, foi gerado no MD5Online:gobarberbootcamp2020Jandir
+    secret: '44eb37c14084754a8ae42fb51c9cf235',
+    expiresIn: '7d',
+};
